@@ -1,0 +1,42 @@
+{
+    "name": "ominity/oauth2-ominity-php",
+    "description": "Ominity Provider for OAuth 2.0 Client",
+    "homepage": "https://github.com/ominity/oauth2-ominity-php",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Ominity",
+            "email": "info@ominity.com"
+        }
+    ],
+    "keywords": [
+        "oauth",
+        "oauth2",
+        "client",
+        "authorization",
+        "authorisation",
+        "ominity"
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "league/oauth2-client": "^2.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6|^10.0",
+        "mockery/mockery": "^1.5",
+        "phpstan/phpstan": "0.12.99"
+    },
+    "suggest": {
+        "ominity/ominity-api-php": "To use the Ominity API client to interact with the Ominity API."
+    },
+    "autoload": {
+        "psr-4": {
+            "Ominity\\OAuth2\\Client\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ominity\\OAuth2\\Client\\Test\\": "tests/src/"
+        }
+    }
+}
